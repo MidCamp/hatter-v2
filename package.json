@@ -10,7 +10,8 @@
     "install": "patternlab install --config ./patternlab-config.json",
     "serve": "patternlab serve --config ./patternlab-config.json",
     "start": "npm run serve",
-    "version": "patternlab --version"
+    "version": "patternlab --version",
+    "dist": "NODE_ENV=production webpack --progress"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +22,21 @@
     "@pattern-lab/engine-twig-php": "^3.0.1",
     "@pattern-lab/starterkit-twig-demo": "^4.1.1",
     "@pattern-lab/uikit-workshop": "^1.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "breakpoint-sass": "^2.7.1",
+    "css-loader": "^3.1.0",
+    "cssnano": "^4.1.10",
+    "file-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "node-sass-glob-importer": "^5.3.2",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "singularitygs": "^1.8.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6"
   }
 }
