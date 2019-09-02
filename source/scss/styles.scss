@@ -27,24 +27,21 @@
 @import "layouts/l-4up";
 @import "layouts/l-6up";
 
+/* Glob rules for pattern sass partials */
 @import "../../source/_patterns/00-elements/**/*.scss";
+@import "../../source/_patterns/01-components/**/*.scss";
 
 /* Component (SMACSS module) rules */
+// TODO - Represent these in _patterns/components and move partials there.
 @import "components/banners";
-//@import "components/buttons";
 @import "components/cta";
 @import "components/event-banner";
-@import "components/footer";
-@import "components/forms";
 @import "components/general";
-@import "components/header";
 @import "components/maps-banner";
 @import "components/schedule";
 @import "components/social";
 @import "components/speaker-list";
 @import "components/sponsors";
-@import "components/news-teaser";
-@import "components/sub-event-list";
 
 /* Styleguide Specific rules */
 @import "styleguide/styleguide";
