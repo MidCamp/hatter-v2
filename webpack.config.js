@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-//const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
 
 // Conditionally return a list of plugins to use based on the current environment.
@@ -17,12 +17,16 @@ function getPlugins() {
         }
     }));
 
-    /*plugins.push(new webpack.ProvidePlugin({
+    // If we decide to bundle js we'll need to enable this if we want to use jQuery or
+    // Drupal.behaviors
+    /*
+    plugins.push(new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
         Drupal: 'Drupal',
         drupalSettings: 'drupalSettings',
-    }));*/
+    }));
+    */
 
     plugins.push(new MiniCssExtractPlugin({
         // Options similar to the same options in webpackOptions.output
@@ -31,6 +35,7 @@ function getPlugins() {
     }));
 
     // Conditionally add plugins for Production builds.
+    // Enable if we bundle JS
     /*if (process.env.NODE_ENV === 'production') {
         // Uglify JS
         plugins.push(new UglifyJsPlugin({
@@ -62,6 +67,7 @@ module.exports = {
     mode: process.env.NODE_ENV || 'development',
     module: {
         rules: [
+            // Enable if we bundle js.
             // https://webpack.js.org/loaders/eslint-loader/
             /*{
                 test: /\.js$/,
