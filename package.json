@@ -12,7 +12,7 @@
     "pl:install": "patternlab install --config ./patternlab-config.json",
     "pl:serve": "patternlab serve --config ./patternlab-config.json",
     "pl:version": "patternlab --version",
-    "postinstall": "patch-package"
+    "postinstall": "patch-package && npm run dist"
   },
   "keywords": [],
   "author": "",
@@ -42,5 +42,6 @@
     "style-loader": "^0.23.1",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6"
-  }
+  },
+  "public": true
 }
