@@ -1,6 +1,6 @@
 {
   "name": "@backlineint/hatter",
-  "version": "1.0.1",
+  "version": "1.0.5",
   "description": "The Hatter style-guide for MidCamp.org",
   "repository": "https://github.com/backlineint/hatter-v2.git",
   "publishConfig": {
@@ -15,7 +15,7 @@
     "pl:install": "patternlab install --config ./patternlab-config.json",
     "pl:serve": "patternlab serve --config ./patternlab-config.json",
     "pl:version": "patternlab --version",
-    "postinstall": "patch-package && npm run dist"
+    "prepare": "patch-package && npm run dist"
   },
   "license": "ISC",
   "devDependencies": {
