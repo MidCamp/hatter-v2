@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html class="pl">
+  <head>
+    <title>Pattern Lab</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre:400,400i,700,700i|Poppins:400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/base.bundle.css?1570717469301" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    
+    <!-- End Pattern Lab -->
+  
+  </head>
+  <body class="body"><section class="container">
+  <div class="l-1up">
+    <h2>Primary Palette</h2>
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #0961A5;"></div>
+      <code>
+        Variable: $blue-dark <br />
+        Hex: #0961A5
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #569ED6;"></div>
+      <code>
+        Variable: $blue <br />
+        Hex: #569ED6
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #61BC58;"></div>
+      <code>
+        Variable: $green <br />
+        Hex: #61BC58
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #E2D030;"></div>
+      <code>
+        Variable: $yellow <br />
+        Hex: #E2D030
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #F5861F;"></div>
+      <code>
+        Variable: $orange <br />
+        Hex: #F5861F
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #EE373F;"></div>
+      <code>
+        Variable: $red <br />
+        Hex: #EE373F
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #953C96;"></div>
+      <code>
+        Variable: $purple <br />
+        Hex: #953C96
+      </code>
+    </div>
+
+    <div class="l-2up">
+      <div class="styleguide-swatch" style="background-color: #D95DA2;"></div>
+      <code>
+        Variable: $magenta <br />
+        Hex: #D95DA2
+      </code>
+    </div>
+
+  </div>
+</section><!--DO NOT REMOVE-->
+  <script type="text/json" id="pl-pattern-data-footer" class="pl-js-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"<p>This is the primary color palette for the site. There is an additional grayscale not shown here.</p>\n","patternBreadcrumb":{"patternType":"elements","patternSubtype":"color-palette"},"patternExtension":"twig","patternName":"Color Palette","patternPartial":"elements-e-color-palette","patternState":"","patternEngineName":"twig-php","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+
+  var scriptLoader = {
+
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1570717469301">
+  (function() {
+    if (self != top) {
+      var cb = '1570717469301';
+      var js = [];
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1570717469301">
+  /*! loadJS: load a JS file asynchronously. [c]2014 @scottjehl, Filament Group, Inc. (Based on http://goo.gl/REQGQ by Paul Irish). Licensed MIT */
+  !function(e){var t=function(t,n){"use strict";var o=e.document.getElementsByTagName("script")[0],r=e.document.createElement("script");return r.src=t,r.async=!0,o.parentNode.insertBefore(r,o),n&&"function"==typeof n&&(r.onload=n),r};"undefined"!=typeof module?module.exports=t:e.loadJS=t}("undefined"!=typeof global?global:this);
+
+  (function() {
+    if (self != top) {
+      loadJS('../../styleguide/js/patternlab-pattern.js');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>
