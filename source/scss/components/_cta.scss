@@ -10,7 +10,8 @@
 }
 
 .cta-arrow svg {
-  fill: $blue-dark;
+  fill: $color-primary;
+  fill: var(--color-primary);
   height: 1em;
 
   .cta-link:active &,

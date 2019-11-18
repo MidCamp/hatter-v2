@@ -99,8 +99,11 @@ $yellow: #ff0;
 $blue: #60A830;
 // TODO - Redefine as 'primary'
 // Also, refactor as CSS Custom Properties for Toggle
-//$blue-dark: #0961A5; // Default Theme
-$blue-dark: #224D17;
+$blue-dark: #0961A5; // Default Theme
+$blue-dark-darken-10: darken($blue-dark, 10%);
+$green-dark: #224D17;
+$green-dark-darken-10: darken($green-dark, 10%);
+$color-primary: $green-dark;
 // TODO - Change to 'accent' - used for links
 // $magenta: #D95DA2; // Default Theme
 $magenta: #953C96;
@@ -116,6 +119,18 @@ $orange: #F5861F;
 $focus-outline-light-blue: #89C4F4;
 $focus-outline-med-blue: #3195ff;
 
+// Theming
+// Default Drupal blue theme
+:root, [data-theme="drupal"] {
+  --color-primary: #{$blue-dark};
+  --color-primary-darken-10: #{$blue-dark-darken-10};
+}
+
+// O'Midcamp theme
+[data-theme="o-midcamp"] {
+  --color-primary: #{$green-dark};
+  --color-primary-darken-10: #{$green-dark-darken-10};
+}
 
 // Use above sass variables to define defaults in normalize.scss
 /* body */

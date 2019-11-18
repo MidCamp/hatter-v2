@@ -111,12 +111,14 @@ input[type="reset"] {
   //background: url("../imgs/crosshatch--blue.svg") no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: $blue-dark;
+  background-color: $color-primary;
+  background-color: var(--color-primary);
 
 
   &:link,
   &:visited {
-    background-color: $blue-dark;
+    background-color: $color-primary;
+    background-color: var(--color-primary);
   }
 
   &:active,
@@ -138,14 +140,18 @@ input[type="reset"] {
   background-size: cover;
   background-position: center;
   background-color: transparent;
-  border: 1px solid $blue-dark;
-  color: $blue-dark;
+  border: 1px solid $color-primary;
+  border: 1px solid var(--color-primary);
+  color: $color-primary;
+  color: var(--color-primary);
 
   &:link,
   &:visited {
     background-color: transparent;
-    border: 1px solid $blue-dark;
-    color: $blue-dark;
+    border: 1px solid $color-primary;
+    border: 1px solid var(--color-primary);
+    color: $color-primary;
+    color: var(--color-primary);
   }
 
   &:active,
@@ -227,13 +233,15 @@ input[type="reset"] {
   background-size: cover;
   background-position: center;
   background-color: $yellow;
-  color: $blue-dark;
+  color: $color-primary;
+  color: var(--color-primary);
 
 
   &:link,
   &:visited {
     background-color: $yellow;
-    color: $blue-dark;
+    color: $color-primary;
+    color: var(--color-primary);
   }
 
   &:active,

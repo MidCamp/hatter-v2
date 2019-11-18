@@ -28,7 +28,8 @@
 }
 
 .map-overlay {
-  background-color: $blue-dark;
+  background-color: $color-primary;
+  background-color: var(--color-primary);
   padding: 0 2em 2em;
 
   @include breakpoint($bp1) {
