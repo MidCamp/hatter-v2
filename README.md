@@ -61,6 +61,7 @@ The following optional files can also be included:
 * `npm run dist` - build pattern library assets in producion mode
 * `npm run pl:serve` - run Pattern Lab in development mode
 * `npm run pl:build` - build static version of pattern library.
+* `npm run pl:deploy` - build static version of pattern library and deploys to GitHub Pages.
 
 ## Pattern Lab Documentation
 
