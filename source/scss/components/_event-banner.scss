@@ -16,7 +16,9 @@
 
   @include breakpoint($bp1) {
     padding: rhythm(2) 0;
-    background-color: rgba($purple, .7);
+    // Changed for O'Midcamp Skin
+    // background-color: rgba($purple, .7);
+    background-color: rgba(226,208,48,.7);
   }
 
   @include breakpoint($bp1) {

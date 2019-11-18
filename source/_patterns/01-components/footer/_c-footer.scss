@@ -4,7 +4,7 @@
  */
 
 .site-footer {
-  background: url("../imgs/dots--blue.svg") no-repeat;
+  background: url("../imgs/dots--green.svg") no-repeat;
   background-size: cover;
   background-position: center;
   background-color: $blue-dark;
@@ -25,7 +25,9 @@
 	a:active,
 	a:hover,
 	a:focus {
-		color: $magenta;
+	  // Updated for O'Midcamp Reskin
+      color: $yellow;
+      //color: $magenta;
 	}
 }
 
