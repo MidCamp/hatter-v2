@@ -11,7 +11,8 @@
   background-position: center;
   background-color: $color-primary;
   background-color: var(--color-primary);
-  border-top: 4px solid $purple;
+  border-top: 4px solid $color-secondary;
+  border-top: 4px solid var(--color-secondary);
   box-shadow: 0px 2px 3px rgba($black, .3);
 }
 
@@ -52,7 +53,8 @@
   &:hover,
   &:focus {
     background: none;
-    background-color: $purple;
+    background-color: $color-secondary;
+    background-color: var(--color-secondary);
   }
 
   @include breakpoint($bp1) {
@@ -131,7 +133,8 @@
     > a:active,
     > a:hover,
     > a:focus {
-      background-color: $purple;
+      background-color: $color-secondary;
+      background-color: var(--color-secondary);
       color: $white;
       text-decoration: none;
     }
@@ -245,7 +248,8 @@
   a:active,
   a:hover,
   a:focus {
-    background-color: $purple;
+    background-color: $color-secondary;
+    background-color: var(--color-secondary);
     color: $white;
     text-decoration: none;
   }

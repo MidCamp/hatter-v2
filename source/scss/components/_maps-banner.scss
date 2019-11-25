@@ -49,9 +49,8 @@
   top: -.6em;
   display: inline-block;
   transform: rotate(-10deg);
-  // Changed for O'Midcamp Skin
-  // background-color: $green;
-  background-color: $purple;
+  background-color: $color-secondary;
+  background-color: var(--color-secondary);
   box-shadow: 2px 2px 5px $gray-dark;
   padding: 8px 15px;
   text-transform: uppercase;

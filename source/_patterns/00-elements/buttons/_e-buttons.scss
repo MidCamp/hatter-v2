@@ -31,12 +31,6 @@ input[type="button"] {
   //outline: none;
   border: 0;
   text-transform: uppercase;
-  // Keeping these commented out for now as I'd love to be able to impelment a toggle between
-  // the O'midcamp and default Midcamp themes. Worst case we could remove the crosshatches
-  // in the default theme as well.
-  // background: url("../imgs/crosshatch--purple.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: $button-background;
   /* stylelint-disable */
   -webkit-appearance: none;
@@ -55,9 +49,6 @@ input[type="button"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--blue.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: $button-hover-background;
     color: $button-hover-text;
     text-decoration: none;
@@ -77,9 +68,6 @@ input[type="reset"] {
 .button--outline[type="submit"],
 .button--outline[type="button"] {
   @extend %button;
-  //background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: transparent;
   border: 1px solid $button-background;
   color: $button-background;
@@ -94,9 +82,6 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--blue-light.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: transparent;
     border: 1px solid $button-hover-background;
     color: $button-hover-background;
@@ -108,9 +93,6 @@ input[type="reset"] {
 .button--primary[type="submit"],
 .button--primary[type="button"] {
   @extend %button;
-  //background: url("../imgs/crosshatch--blue.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: $color-primary;
   background-color: var(--color-primary);
 
@@ -124,10 +106,8 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--purple.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $purple;
+    background-color: $color-primary;
+    background-color: var(--color-primary);
   }
 }
 
@@ -136,9 +116,6 @@ input[type="reset"] {
 .button--primary-outline[type="submit"],
 .button--primary-outline[type="button"] {
   @extend %button;
-  //background: url("../imgs/crosshatch--blue-light.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: transparent;
   border: 1px solid $color-primary;
   border: 1px solid var(--color-primary);
@@ -157,12 +134,11 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: transparent;
-    border: 1px solid $purple;
-    color: $purple;
+    border: 1px solid $color-secondary;
+    border: 1px solid var(--color-secondary);
+    color: $color-secondary;
+    color: var(--color-secondary);
   }
 }
 
@@ -171,9 +147,6 @@ input[type="reset"] {
 .button--secondary[type="submit"],
 .button--secondary[type="button"] {
   @extend %button;
-  //background: url("../imgs/crosshatch--gray.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: $gray-medium;
   color: $white;
 
@@ -186,10 +159,8 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--purple.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $purple;
+    background-color: $color-secondary;
+    background-color: var(--color-secondary);
   }
 }
 
@@ -198,9 +169,6 @@ input[type="reset"] {
 .button--secondary-outline[type="submit"],
 .button--secondary-outline[type="button"] {
   @extend %button;
-  //background: url("../imgs/crosshatch--gray-light.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: transparent;
   border: 1px solid $gray-medium;
   color: $gray-medium;
@@ -215,12 +183,11 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--purple-light.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
     background-color: transparent;
-    border: 1px solid $purple;
-    color: $purple;
+    border: 1px solid $color-secondary;
+    border: 1px solid var(--color-secondary);
+    color: $color-secondary;
+    color: var(--color-secondary);
   }
 }
 
@@ -229,9 +196,6 @@ input[type="reset"] {
 .button--tertiary[type="submit"],
 .button--tertiary[type="button"] {
   @extend %button;
-  //background: url("../imgs/crosshatch--yellow.svg") no-repeat;
-  background-size: cover;
-  background-position: center;
   background-color: $yellow;
   color: $color-primary;
   color: var(--color-primary);
@@ -247,10 +211,8 @@ input[type="reset"] {
   &:active,
   &:hover,
   &:focus {
-    //background: url("../imgs/crosshatch--purple.svg") no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: $purple;
+    background-color: $color-secondary;
+    background-color: var(--color-secondary);
     color: $white;
   }
 }
