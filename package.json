@@ -1,6 +1,6 @@
 {
   "name": "@midcamp/hatter",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "The Hatter style-guide for MidCamp.org",
   "repository": "https://github.com/backlineint/hatter-v2.git",
   "publishConfig": {
