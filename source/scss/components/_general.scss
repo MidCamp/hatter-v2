@@ -4,3 +4,16 @@
   display: inline-block;
   float: none;
 }
+
+.field--name-field-captions {
+  @extend textarea;
+
+  h3 {
+    margin-top: 0;
+  }
+
+  .field__item {
+    max-height: 300px;
+    overflow: scroll;
+  }
+}
