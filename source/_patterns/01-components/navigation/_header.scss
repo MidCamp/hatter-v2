@@ -9,8 +9,10 @@
   background: url("../imgs/dots--green.svg") no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: $blue-dark;
-  border-top: 4px solid $purple;
+  background-color: $color-primary;
+  background-color: var(--color-primary);
+  border-top: 4px solid $color-secondary;
+  border-top: 4px solid var(--color-secondary);
   box-shadow: 0px 2px 3px rgba($black, .3);
 }
 
@@ -51,7 +53,8 @@
   &:hover,
   &:focus {
     background: none;
-    background-color: $purple;
+    background-color: $color-secondary;
+    background-color: var(--color-secondary);
   }
 
   @include breakpoint($bp1) {
@@ -130,7 +133,8 @@
     > a:active,
     > a:hover,
     > a:focus {
-      background-color: $purple;
+      background-color: $color-secondary;
+      background-color: var(--color-secondary);
       color: $white;
       text-decoration: none;
     }
@@ -161,7 +165,8 @@
   &:hover,
   &:focus {
     background: none;
-    background-color: darken($blue-dark, 10%);
+    background-color: darken($color-primary, 10%);
+    background-color: var(--color-primary-darken-10);
 
     svg {
       fill: $white;
@@ -171,7 +176,8 @@
   }
 
   .primary-nav__item.is-active & {
-    background-color: darken($blue-dark, 10%);
+    background-color: darken($color-primary, 10%);
+    background-color: var(--color-primary-darken-10);
 
     svg {
       transform: rotate(90deg);
@@ -196,7 +202,8 @@
 .primary-nav__sublist {
   @extend %list--simple;
   border-top: 1px dotted $blue;
-  background-color: darken($blue-dark, 10%);
+  background-color: darken($color-primary, 10%);
+  background-color: var(--color-primary-darken-10);
   display: none;
   visibility: hidden;
 
@@ -241,7 +248,8 @@
   a:active,
   a:hover,
   a:focus {
-    background-color: $purple;
+    background-color: $color-secondary;
+    background-color: var(--color-secondary);
     color: $white;
     text-decoration: none;
   }
@@ -264,7 +272,7 @@
   font-family: $sans;
   font-weight: 400;
   overflow: hidden;
-  background-color: $blue-dark;
+  background-color: var(--color-primary);
   padding: 10px 0;
   color: $white;
   .path-frontpage & {
