@@ -20,9 +20,9 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@pattern-lab/cli": "^0.0.3",
-    "@pattern-lab/core": "^3.0.3",
-    "@pattern-lab/engine-twig-php": "^3.0.3",
+    "@pattern-lab/cli": "^6.0.1",
+    "@pattern-lab/core": "^6.0.1",
+    "@pattern-lab/engine-twig-php": "^6.0.1",
     "@pattern-lab/starterkit-twig-demo": "^4.1.1",
     "@pattern-lab/uikit-workshop": "^1.0.1",
     "autoprefixer": "^9.6.1",
