@@ -1,7 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const globImporter = require('node-sass-glob-importer');
 
 // Conditionally return a list of plugins to use based on the current environment.
@@ -9,8 +8,7 @@ function getPlugins() {
     var plugins = [];
 
     // Always expose NODE_ENV to webpack, you can now use `process.env.NODE_ENV`
-    // inside your code for any environment checks; UglifyJS will automatically
-    // drop any unreachable code.
+    // inside your code for any environment checks;
     plugins.push(new webpack.DefinePlugin({
         'process.env': {
             'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
@@ -107,9 +105,11 @@ module.exports = {
                     { loader: 'postcss-loader', options: { sourceMap: true } },
                     { loader: 'sass-loader',
                         options: {
+                          sassOptions: {
                             precision: 8,
                             sourceMap: true,
                             importer: globImporter()
+                          }
                         }
                     }
                 ]
